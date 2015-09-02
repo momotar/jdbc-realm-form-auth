@@ -1,0 +1,35 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* フッタと同じ高さに設定 */
+  margin-bottom: 60px;
+
+  /* 一番下までスクロールした時の余白 */
+  padding-bottom: 0;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  /* フッタの高さ */
+  height: 60px;
+}
+
+.container .credit {
+        margin: 20px 0;
+        color: #999;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <body style="padding-top:70px;">
+        <ui:composition template="../layouts/layout.xhtml">
+            <ui:define name="title">ユーザー情報登録処理</ui:define>
+
+            <ui:define name="sub-menu"><ui:include src="../templates/login-menu.xhtml"/></ui:define>
+            
+            <!-- Main Contents Start Including -->
+            <ui:define name="content">
+                <!-- main -->
+                <div class="col-md-9">
+                    <div class="page-header">
+                        <h1>ユーザー情報登録処理</h1>
+                    </div>
+                    <form jsf:id="form" method="post" action="" class="form-horizontal">
+                        <!-- name -->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"> ユーザー名 </label>
+                            <div class="col-sm-5">
+                                <input type="text" name="name" class="form-control input-lg" placeholder="ユーザー名を入力して下さい" 
+                                    jsf:id="userName" jsf:value="#{registPage.username}" /> 
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"> メールアドレス </label>
+                            <div class="col-sm-5">
+                                <input type="text" name="email" class="form-control input-lg" placeholder="メールアドレスを入力して下さい" 
+                                    jsf:id="email" jsf:value="#{registPage.email}" /> 
+                            </div>
+                        </div>
+                        <!-- password -->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"> パスワード </label>
+                            <div class="col-md-5">
+                                <input type="password" name="password" class="form-control input-lg" placeholder="パスワードを入力して下さい" 
+                                    jsf:id="inputSecret" jsf:value="#{registPage.password}"/> 
+                            </div>
+                        </div>
+                        <!-- groupname -->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"> 所属グループ </label>
+                            <div class="col-md-5">
+                                <input type="text" name="groupid" class="form-control input-lg" placeholder="グループ名を入力して下さい" 
+                                    jsf:id="groupid" jsf:value="#{registPage.groupid}"/> 
+                            </div>
+                        </div>
+                        <!-- submit -->
+                        <div class="col-md-offset-2">
+                            <button jsf:id="commandButton" jsf:action="#{registPage.registDB}" type="submit" class="btn btn-primary btn-lg"> ユーザ登録 </button>
+                            <h:messages id="messages" errorClass="error" />
+                        </div>
+                    </form>
+                </div>
+                <!-- Main Contents Included -->
+                
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

@@ -26,7 +26,6 @@ public class RegistPage implements Serializable {
     DB へユーザ情報・グループ情報の登録
     */
     public String registDB() throws IOException {
-        System.out.println("■" +username + "::" + email + "::" + password + "::" + groupid);
         userRegist.createUserAndGroup(
         getUsername(),
         getEmail(),
@@ -53,7 +52,6 @@ public class RegistPage implements Serializable {
      * @param username the username to set
      */
     public void setUsername(String username) {
-        System.out.println("■" +username + "::" + email + "::" + password + "::" + groupid);
         this.username = username;
     }
 

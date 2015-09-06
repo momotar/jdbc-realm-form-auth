@@ -1,4 +1,4 @@
-package momotar.jdbcrealm.ejbs;
+package momotar.jdbc.realm.form.auth.ejbs;
 
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.Stateless;

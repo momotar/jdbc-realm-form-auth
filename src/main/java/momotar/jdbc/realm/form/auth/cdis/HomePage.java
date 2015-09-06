@@ -1,10 +1,10 @@
-package momotar.jdbcrealm.cdis;
+package momotar.jdbc.realm.form.auth.cdis;
 
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
 import javax.faces.context.FacesContext;
-import momotar.jdbcrealm.ejbs.RoleCheckLogic;
+import momotar.jdbc.realm.form.auth.ejbs.RoleCheckLogic;
 
 /**
  *
@@ -14,9 +14,6 @@ import momotar.jdbcrealm.ejbs.RoleCheckLogic;
 @RequestScoped
 public class HomePage {
 
-    /**
-     * Creates a new instance of HomePage
-     */
     public HomePage() {
     }
     

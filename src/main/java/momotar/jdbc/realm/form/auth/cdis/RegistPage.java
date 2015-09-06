@@ -1,11 +1,11 @@
-package momotar.jdbcrealm.cdis;
+package momotar.jdbc.realm.form.auth.cdis;
 
 import java.io.IOException;
 import java.io.Serializable;
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
-import momotar.jdbcrealm.ejbs.UserRegistManager;
+import momotar.jdbc.realm.form.auth.ejbs.UserRegistManager;
 
 /**
  *
@@ -26,6 +26,7 @@ public class RegistPage implements Serializable {
     DB へユーザ情報・グループ情報の登録
     */
     public String registDB() throws IOException {
+        System.out.println("■" +username + "::" + email + "::" + password + "::" + groupid);
         userRegist.createUserAndGroup(
         getUsername(),
         getEmail(),
@@ -52,6 +53,7 @@ public class RegistPage implements Serializable {
      * @param username the username to set
      */
     public void setUsername(String username) {
+        System.out.println("■" +username + "::" + email + "::" + password + "::" + groupid);
         this.username = username;
     }
 

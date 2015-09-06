@@ -1,9 +1,9 @@
-package momotar.jdbcrealm.cdis;
+package momotar.jdbc.realm.form.auth.cdis;
 
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
-import momotar.jdbcrealm.ejbs.UserRegistManager;
+import momotar.jdbc.realm.form.auth.ejbs.UserRegistManager;
 
 /**
  *
@@ -24,9 +24,6 @@ public class RemovePage {
         return "rem-success";
     }
     
-    /**
-    * Creates a new instance of RemovePage
-    */
     public RemovePage() {
     }
     

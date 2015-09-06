@@ -1,4 +1,4 @@
-package momotar.jdbcrealm.entities;
+package momotar.jdbc.realm.form.auth.entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -114,7 +114,7 @@ public class Users implements Serializable {
 
     @Override
     public String toString() {
-        return "momotar.jdbcrealm.Users[ username=" + username + " ]";
+        return "momotar.jdbc.realm.form.auth.Users[ username=" + username + " ]";
     }
     
 }

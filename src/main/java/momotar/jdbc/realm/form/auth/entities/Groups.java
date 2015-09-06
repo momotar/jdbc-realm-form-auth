@@ -1,4 +1,4 @@
-package momotar.jdbcrealm.entities;
+package momotar.jdbc.realm.form.auth.entities;
 
 import java.io.Serializable;
 import javax.persistence.EmbeddedId;
@@ -76,7 +76,7 @@ public class Groups implements Serializable {
 
     @Override
     public String toString() {
-        return "momotar.jdbcrealm.Groups[ groupsPK=" + groupsPK + " ]";
+        return "momotar.jdbc.realm.form.auth.Groups[ groupsPK=" + groupsPK + " ]";
     }
     
 }

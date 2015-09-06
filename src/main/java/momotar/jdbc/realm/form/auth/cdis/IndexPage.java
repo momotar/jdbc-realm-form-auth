@@ -1,4 +1,4 @@
-package momotar.jdbcrealm.cdis;
+package momotar.jdbc.realm.form.auth.cdis;
 
 import java.io.IOException;
 import java.security.Principal;

@@ -1,4 +1,4 @@
-package momotar.jdbcrealm.DigestUtil;
+package momotar.jdbc.realm.form.auth.DigestUtil;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

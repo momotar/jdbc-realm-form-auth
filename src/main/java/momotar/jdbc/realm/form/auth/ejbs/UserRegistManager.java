@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package momotar.jdbcrealm.ejbs;
+package momotar.jdbc.realm.form.auth.ejbs;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import momotar.jdbcrealm.DigestUtil.SHA256Encoder;
-import momotar.jdbcrealm.entities.Groups;
-import momotar.jdbcrealm.entities.GroupsPK;
-import momotar.jdbcrealm.entities.Users;
+import momotar.jdbc.realm.form.auth.DigestUtil.SHA256Encoder;
+import momotar.jdbc.realm.form.auth.entities.Groups;
+import momotar.jdbc.realm.form.auth.entities.GroupsPK;
+import momotar.jdbc.realm.form.auth.entities.Users;
 
 /**
  *
